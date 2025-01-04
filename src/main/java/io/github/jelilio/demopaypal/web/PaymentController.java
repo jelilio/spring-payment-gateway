@@ -33,4 +33,10 @@ public class PaymentController {
     LOG.info("completePayment: token: {}, payerId: {}", token, payerId);
     return paypalService.completePayment(token, payerId);
   }
+
+  @GetMapping(value = "/cancel")
+  public CompletedOrder cancelPayment(@RequestParam("token") String token, @RequestParam("PayerID") String payerId) {
+    LOG.info("cancelPayment: token: {}, payerId: {}", token, payerId);
+    return paypalService.completePayment(token, payerId);
+  }
 }

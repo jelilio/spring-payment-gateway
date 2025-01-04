@@ -19,6 +19,7 @@ repositories {
 
 dependencies {
     implementation 'com.paypal.sdk:checkout-sdk:2.0.0'
+    implementation 'com.stripe:stripe-java:28.2.0'
 
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-web'
